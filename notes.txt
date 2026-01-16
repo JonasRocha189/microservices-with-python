@@ -1,0 +1,13 @@
+1 - Docker demo
+
+- create virtual env
+- install flask
+- create requirements.txt // pip freeze > requirements.txt
+- create app.py with the first route
+- run flask // python -m flask run
+- test // curl hostname
+- create Dockerfile with the image description
+- buidl docker image  // docker build --tag flask-docker .
+- check the images // docker images
+- create docker container // docker run -p 5000:5000 --name container_name flask-docker
+- check container //  curl http://localhost:5000
