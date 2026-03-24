@@ -1,2 +1,5 @@
-.venv
 /_Resources
+1-docker-demo/.venv/
+2-microservice-ecomm/book/.venv/
+2-microservice-ecomm/user/.venv/
+/.vscode/

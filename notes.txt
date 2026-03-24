@@ -9,5 +9,58 @@
 - create Dockerfile with the image description
 - buidl docker image  // docker build --tag flask-docker .
 - check the images // docker images
-- create docker container // docker run -p 5000:5000 --name container_name flask-docker
+- create docker container // docker run -p 5000:5000 --name container_name image_name
 - check container //  curl http://localhost:5000
+- stop docker container // docker stop container_name
+
+
+2 - Microservice ecomm
+- create folders // mkdir folder_name
+- create file //  echo > file.py
+- create virtual env
+- create folders: user, book, frontend, order
+
+
+3 - User
+- create venv for user
+- install flask
+- app.py
+- create blueprint for api routes
+- routes.py
+
+- install sqlalchemy // pip install sqlalchemy flask-sqlalchemy
+- models.py
+
+- install flask login // pip install flask-login
+
+obs: generate token with python
+open python terminal // python
+>>> import secrets
+>>> secrets.token_urlsafe(16)
+
+- add database configurations on app.py
+- create foler database
+
+- create route to get all users
+- install flask migrate // pip install flask-migrate
+- instatiate flask migrate
+- run the comands 
+// flask db init  (to create the migrations folder)
+// flask db migrate
+// flask db upgrade
+
+OBS
+if show an error, when run comand migrate, to fix add in app.py
+
+import os
+basedir = os.path.abspath(os.path.dirname(__file__))
+
+change the path to database folder
+app.config['SQLALCHEMY_DATABASE_URI'] = f'sqlite:///{os.path.join(basedir, "database", "user.db")}'
+models.init_app(app)
+
+
+4 - book
+
+- create venv
+- install flask, flask-sqlalchemy, flask-migrate // pip install flask flask-sqlalchemy flask-migrate
