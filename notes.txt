@@ -64,3 +64,26 @@ models.init_app(app)
 
 - create venv
 - install flask, flask-sqlalchemy, flask-migrate // pip install flask flask-sqlalchemy flask-migrate
+
+5 - order
+- create venv
+- install flask, flask-sqlalchemy, flask-migrate // pip install flask flask-sqlalchemy flask-migrate requests
+
+
+OBS - force run flask in one port
+add python dot env // pip install python-dotenv
+
+create flask env end add
+FLASK_APP=app.py
+FLASK_RUN_PORT=5003
+FLASK_DEBUG=1
+
+use the comand to run flask // flask run
+
+
+06 - frontend
+
+- create venv
+- install flask, flask-login, flask-bootstrap // pip install flask flask-login flask-bootstrap flask-wtf wtform
+
+- create api folder
